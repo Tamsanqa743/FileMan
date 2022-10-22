@@ -1,5 +1,4 @@
 import os
-from turtle import update
 from flask import redirect, render_template,request, session,flash, send_from_directory,flash
 from config import Configuration
 from flask_session import Session
