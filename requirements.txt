@@ -1,0 +1,8 @@
+flask
+flask_session
+turbo-flask
+flask-login
+Flask-WTF
+WTForms
+flask-ckeditor
+zipp

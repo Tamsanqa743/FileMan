@@ -1,0 +1,311 @@
+body,
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow: hidden;
+}
+
+.highlight {
+  background-color: rgb(141, 194, 228);
+  color: gray;
+}
+.outer {
+  height: 100%;
+}
+tr:hover {
+  background-color: lightgray;
+  color: gray;
+}
+
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0px;
+}
+button {
+  padding-top: 10px;
+}
+
+i {
+  font-size: 50px;
+  color: gray;
+  margin: 0px;
+}
+
+
+#move {
+  display: flex;
+  flex-direction: column;
+}
+.btn-color {
+  background-color: #0e1c36;
+  color: #fff;
+}
+#cls:hover{
+  cursor: pointer;
+
+}
+
+
+.py {
+  background: url(https://img.icons8.com/fluency-systems-regular/20/000000/python.png)
+    no-repeat 0px 0px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap");
+
+* {
+  /* so that the height we give element includes the margin and padding inside */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  padding: 0px 0px;
+
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  padding-right: 100px;
+}
+.logo img {
+  width: 100px;
+  margin-left: 10px; /* to move 3 bars to left*/
+}
+.navbar .searchbar {
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  border: 2px solid #ececec;
+  height: 100%;
+  width: 600px;
+  margin-right: 10px;
+}
+.search input {
+  border: none;
+  width: 90%;
+  padding-left: 10px;
+}
+.search button {
+  border: none;
+  border-left: 2px solid #ececec;
+  width: 10%;
+}
+.material-icons {
+  color: #606060;
+}
+
+.navigation i {
+  padding-top: 10px;
+  margin-right: 20px;
+}
+.current-path{
+  position:absolute ;
+  background-color: white;
+  width: calc(100vw - 450px);
+  height: 60px;
+  margin-left:57px ;
+  padding-top: 1.5%;
+  border-bottom: 1px solid #cccccc;
+  
+}
+.mainbody {
+  height: calc(100vh - 40px);
+  display: flex;
+  background-color: lightgray;
+  overflow: hidden;
+  position: absolute;
+}
+
+.category {
+  width: 15%;
+  height: 100vh; 
+  background-color: white;
+  padding-top: 1%;
+  margin-left: 1.5%;
+  margin-right: 1%;
+  border-radius: 10px;
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.subcription-heading {
+  margin: 10px 0px 10px 25px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.categ {
+  width: 100%;
+  display: flex;
+  align-items: centre;
+  height: 45px;
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bck{
+  width: 100%;
+  display: flex;
+  align-items: centre;
+  
+  
+  font-size: 10px;
+  
+  cursor: pointer;
+}
+.categ:hover {
+  background-color: #e6e6e4;
+  border-radius: 15px;
+}
+
+/* to move icon from name */
+
+.categ i {
+  /* color: white */
+  padding-right: 7%;
+}
+
+
+.table-responsive {
+  background-color: white;
+  width: calc(100vw - 150px);
+  height: calc(100vh - 50px);
+  padding-left: 20px;
+  margin-right: 1.5%;
+  border-radius: 15px;
+  
+}
+
+
+.table-row{
+  padding-left: 50%;
+}
+
+
+table, td, th {
+  height: 40px;
+  width: 160px;
+  text-align: left;
+  vertical-align: middle;
+  /* margin-left: 50px; */
+  border-radius: 10px;
+  border: none;
+}
+
+th, td{
+  /* border: none; */
+  padding-left: 50px;
+}
+
+
+.somespace{
+  background-color:lightgray;
+  height: 10px;
+}
+.FolderCount, .FileCount{
+
+  padding-left: 40px;
+}
+.filess{
+    margin-top: 10px;    
+    width: 100%;
+    height: 100%;
+    
+}
+.file-grid{
+    display: flex;
+    flex-wrap: wrap; /*  does not go over width but continues below */
+    padding: 15px;
+    padding-left: 40px;
+    overflow-y: hidden;
+}
+
+.filee{
+    display: flex;
+    width: 20%;
+    height: 10%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left:1.5%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1.75px;
+    border-color: lightgray;
+    cursor: pointer;
+
+}
+.filee i{
+  padding-right: 3%;
+}
+.CodeMirror{
+  border: 1px solid #eee;
+  height: auto;
+  margin-left: 40px;
+  overflow: hidden;
+  
+}
+
+
+
+.col-form-label{
+  border-radius: 2px;
+  border: solid 1.2px black;
+  height: 3.5rem;
+  margin-bottom: 5px;
+  width: 75%;
+
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show {
+
+    visibility: visible !important; /* Show the snackbar */
+}
+
+
+
