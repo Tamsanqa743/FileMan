@@ -10,9 +10,3 @@ The file manager runs a server on a local machine and can manage files stored on
 * Tamsanqa Thwala
 * Kgotso Matshaya
 * Vusi Skosana
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-Active development
